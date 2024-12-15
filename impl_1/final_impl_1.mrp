@@ -1,0 +1,404 @@
+                         Lattice Mapping Report File
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
+Mapped on: Mon Dec  9 01:39:17 2024
+
+Design Information
+------------------
+
+Command line:   map -i final_impl_1_syn.udb -pdc Z:/my_designs/final/ports.pdc
+     -o final_impl_1_map.udb -mp final_impl_1.mrp -hierrpt -gui
+
+Design Summary
+--------------
+
+   Number of slice registers: 609 out of  5280 (12%)
+   Number of I/O registers:      2 out of   117 (2%)
+   Number of LUT4s:           4320 out of  5280 (82%)
+      Number of logic LUT4s:             2718
+      Number of inserted feedthru LUT4s:  34
+      Number of ripple logic:            784 (1568 LUT4s)
+   Number of IO sites used:   14 out of 39 (36%)
+      Number of IO sites used for general PIO: 14
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 14 out of 36 (39%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 14 out of 39 (36%)
+   Number of DSPs:             7 out of 8 (87%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  1 out of 1 (100%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             30 out of 30 (100%)
+   Number of PLLs:             1 out of 1 (100%)
+   Number of Clocks:  5
+      Net clk: 50 loads, 50 rising, 0 falling (Driver: Pin
+     the_pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
+      Net vsync_c_N_3067: 424 loads, 0 rising, 424 falling (Driver: Pin
+     the_vga.i5_3_lut/Z)
+      Net nes_clk_o_c: 16 loads, 16 rising, 0 falling (Driver: Pin
+     tnes.nes_clk_o_c_I_0/Z)
+      Net tnes.clk: 19 loads, 19 rising, 0 falling (Driver: Pin tnes.osc/CLKHF)
+      Net ext_osc_c: 1 loads, 1 rising, 0 falling (Driver: Port ext_osc)
+   Number of Clock Enables:  18
+      Net VCC_net: 70 loads, 0 SLICEs
+      Net the_patterngen.ship2_alive_N_3075: 2 loads, 2 SLICEs
+      Net n324_N_3077: 6 loads, 6 SLICEs
+      Net ship2_rot_2__N_157: 4 loads, 4 SLICEs
+      Net row_0__N_29: 6 loads, 6 SLICEs
+
+                                    Page 1
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net ship1_rot_2__N_113: 4 loads, 4 SLICEs
+      Net ship2.y_vel_0__N_1957: 28 loads, 28 SLICEs
+      Net ship2.counter1_0__N_1986: 3 loads, 3 SLICEs
+      Net the_state_machine.state_0__N_350: 2 loads, 2 SLICEs
+      Net proj1.proj3.y_position_start_0__N_2614: 4 loads, 0 SLICEs
+      Net proj1.proj2.y_position_start_0__N_2466: 4 loads, 0 SLICEs
+      Net proj1.proj1.y_position_start_0__N_2318: 4 loads, 0 SLICEs
+      Net tnes.player2_input_0__N_70: 10 loads, 10 SLICEs
+      Net proj2.proj3.rotation_1__N_3011: 6 loads, 5 SLICEs
+      Net proj2.proj2.y_position_start_0__N_2910: 4 loads, 0 SLICEs
+      Net proj2.proj1.y_position_start_0__N_2762: 4 loads, 0 SLICEs
+      Net ship1.y_vel_0__N_1860: 28 loads, 28 SLICEs
+      Net ship1.counter1_0__N_1889: 3 loads, 3 SLICEs
+   Number of LSRs:  28
+      Net the_patterngen.t_press_start_sprite_output.color_index[1]: 1 loads, 1
+     SLICEs
+      Net color_index_adj_4064[2]: 1 loads, 1 SLICEs
+      Net color_index_adj_4062[2]: 1 loads, 1 SLICEs
+      Net ship1_reset_N_3073[0]: 1 loads, 1 SLICEs
+      Net col_0__N_50: 6 loads, 6 SLICEs
+      Net row_0__N_30: 6 loads, 6 SLICEs
+      Net n324: 78 loads, 78 SLICEs
+      Net ship2.y_vel_0__N_1958: 1 loads, 1 SLICEs
+      Net ship2.x_vel_0__N_1929: 2 loads, 2 SLICEs
+      Net ship2.ship2_y_0__N_149: 3 loads, 3 SLICEs
+      Net ship2.ship2_x_0__N_132: 3 loads, 3 SLICEs
+      Net ship2.counter2_0__N_1996: 3 loads, 3 SLICEs
+      Net ship2.counter1_0__N_1987: 3 loads, 3 SLICEs
+      Net the_state_machine.state_1__N_348: 1 loads, 1 SLICEs
+      Net ship2_reset_N_3076: 1 loads, 1 SLICEs
+      Net the_state_machine.state_0__N_351: 1 loads, 1 SLICEs
+      Net proj1.proj3.counter_2__N_2650: 11 loads, 11 SLICEs
+      Net proj1.proj2.counter_2__N_2502: 11 loads, 11 SLICEs
+      Net proj1.proj1.counter_2__N_2354: 11 loads, 11 SLICEs
+      Net proj2.proj3.counter_2__N_3047: 11 loads, 11 SLICEs
+      Net proj2.proj2.counter_2__N_2946: 11 loads, 11 SLICEs
+      Net proj2.proj1.counter_2__N_2798: 11 loads, 11 SLICEs
+      Net ship1.y_vel_0__N_1861: 1 loads, 1 SLICEs
+      Net ship1.x_vel_0__N_1832: 2 loads, 2 SLICEs
+      Net ship1.ship1_y_0__N_105: 3 loads, 3 SLICEs
+      Net ship1.ship1_x_0__N_88: 3 loads, 3 SLICEs
+      Net ship1.counter2_0__N_1899: 3 loads, 3 SLICEs
+      Net ship1.counter1_0__N_1890: 3 loads, 3 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net VCC_net: 311 loads
+      Net ship2_rot[3]: 220 loads
+      Net ship1_rot[3]: 219 loads
+      Net ship1_rot[4]: 210 loads
+      Net ship2_rot[4]: 210 loads
+      Net ship2_rot[2]: 208 loads
+      Net ship1_rot[2]: 206 loads
+      Net ship2_rot[5]: 203 loads
+      Net ship1_rot[5]: 197 loads
+      Net ship2_rot[1]: 188 loads
+
+
+
+
+                                    Page 2
+
+
+
+
+
+
+
+
+   Number of warnings:  8
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+WARNING <1026001> - map: Z:/my_designs/final/ports.pdc (14) : No port matched
+     'nes2_latch'.
+WARNING <1026001> - map: Z:/my_designs/final/ports.pdc (15) : No port matched
+     'nes2_clk_o'.
+WARNING <1027013> - map: No port matched 'nes2_latch'.
+WARNING <1014301> - map: Can't resolve object 'nes2_latch' in constraint
+     'ldc_set_location -site {18} [get_ports nes2_latch]'.
+WARNING <1027013> - map: No port matched 'nes2_clk_o'.
+WARNING <1014301> - map: Can't resolve object 'nes2_clk_o' in constraint
+     'ldc_set_location -site {19} [get_ports nes2_clk_o]'.
+WARNING <1011001> - map: Remove invalid constraint 'ldc_set_location -site {18}
+     [get_ports nes2_latch]'.
+WARNING <1011001> - map: Remove invalid constraint 'ldc_set_location -site {19}
+     [get_ports nes2_clk_o]'.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| nes2_in             | INPUT     |           | I     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| nes1_in             | INPUT     |           | I     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| ext_osc             | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| nes_clk_o           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| debug_tail          | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| nes_latch           | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| vsync               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| hsync               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb[0]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb[1]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb[2]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb[3]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb[4]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb[5]              | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+                                    Page 3
+
+
+
+
+
+
+Removed logic
+-------------
+
+Block proj2/proj1/ship2_rot_1__I_0_6_i was optimized away.
+Block proj2/proj1/ship2_rot_1__I_0_7_i was optimized away.
+Block proj2/proj1/ship2_rot_1__I_0_4_i was optimized away.
+Block proj2/proj1/ship2_rot_1__I_0_5_i was optimized away.
+Block proj2/proj2/ship2_rot_1__I_0_10_i was optimized away.
+Block proj2/proj2/ship2_rot_1__I_0_11_i was optimized away.
+Block proj2/proj2/ship2_rot_1__I_0_8_i was optimized away.
+Block proj2/proj2/ship2_rot_1__I_0_9_i was optimized away.
+Block proj2/proj3/ship2_rot_1__I_0_12_i was optimized away.
+Block proj1/proj1/ship1_rot_1__I_0_6_i was optimized away.
+Block proj1/proj1/ship1_rot_1__I_0_7_i was optimized away.
+Block proj1/proj1/ship1_rot_1__I_0_4_i was optimized away.
+Block proj1/proj1/ship1_rot_1__I_0_5_i was optimized away.
+Block proj1/proj2/ship1_rot_1__I_0_10_i was optimized away.
+Block proj1/proj2/ship1_rot_1__I_0_11_i was optimized away.
+Block proj1/proj2/ship1_rot_1__I_0_8_i was optimized away.
+Block proj1/proj2/ship1_rot_1__I_0_9_i was optimized away.
+Block proj1/proj3/ship1_rot_1__I_0_14_i was optimized away.
+Block proj1/proj3/ship1_rot_1__I_0_i was optimized away.
+Block proj1/proj3/ship1_rot_1__I_0_12_i was optimized away.
+Block proj1/proj3/ship1_rot_1__I_0_13_i was optimized away.
+Block i1 was optimized away.
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                 Pin/Node Value
+  PLL Instance Name:                            the_pll/lscc_pll_inst/u_PLL_B
+  Input Reference Clock:               PIN      ext_osc_c
+  Output Clock(CoreA):                          NONE
+  Output Clock(GlobalA):               NODE     clk
+  Output Clock(CoreB):                          NONE
+  Output Clock(GlobalB):                        NONE
+  Feedback input:                      NODE     the_pll.lscc_pll_inst.feedback_w
+  Internal Feedback output:            NODE     the_pll.lscc_pll_inst.feedback_w
+  BYPASS signal:                                GND
+  LATCH signal:                                 GND
+  Lock Signal:                                  NONE
+  Input Clock Frequency (MHz):                  NA
+  Reference Divider:                            0
+  Feedback Divider:                             66
+  VCO Divider:                                  5
+  ENABLE_ICEGATE_PORTA:                         0
+  ENABLE_ICEGATE_PORTB:                         0
+  PLLOUT_SELECT_PORTA:                          GENCLK
+  PLLOUT_SELECT_PORTB:                          GENCLK
+  SHIFTREG_DIV_MODE:                            0
+  DELAY_ADJUSTMENT_MODE_RELATIVE:               FIXED
+  FDA_RELATIVE:                                 0
+  FEEDBACK_PATH:                                SIMPLE
+  DELAY_ADJUSTMENT_MODE_FEEDBACK:               FIXED
+  FDA_FEEDBACK:                                 0
+  FILTER_RANGE:                                 1
+  EXTERNAL_DIVIDE_FACTOR:                       NONE
+  TEST Mode:                                    0
+
+                                    Page 4
+
+
+
+
+
+
+OSC Summary
+-----------
+
+OSC 1:                                 Pin/Node Value
+  OSC Instance Name:                            tnes/osc
+  Power UP:                            NODE     VCC_net
+  Enable Signal:                       NODE     VCC_net
+  OSC Output:                          NODE     tnes.clk
+  DIV Setting:                                  00
+
+ASIC Components
+---------------
+
+Instance Name: the_patterngen/t_vsteroids_sprite/row_3__I_0_2
+         Type: DSP
+Instance Name: the_patterngen/t_vsteroids_sprite/linear_position_0__I_0
+         Type: EBR
+Instance Name: the_patterngen/t_tie_sprite/row_2__I_0_2
+         Type: DSP
+Instance Name: the_patterngen/t_tie_sprite/col_2__I_0
+         Type: EBR
+Instance Name: the_patterngen/t_shipsprite2/ship2_sprite_y_0__I_0
+         Type: DSP
+Instance Name: the_patterngen/t_shipsprite1/ship1_spriteY_0__I_0
+         Type: DSP
+Instance Name: the_patterngen/t_press_start_sprite_output/row_2__I_0_3
+         Type: DSP
+Instance Name: the_patterngen/t_press_start_sprite_output/linear_position_0__I_0
+         Type: EBR
+Instance Name: the_patterngen/t_player2_wins_sprite/linear_position_0__I_0
+         Type: EBR
+Instance Name: the_patterngen/t_player1_wins_sprite/linear_position_0__I_0_3
+         Type: EBR
+Instance Name: the_patterngen/t_player1_wins_sprite/row_2__I_0
+         Type: DSP
+Instance Name: the_patterngen/t_game_over_sprite/row_3__I_0
+         Type: DSP
+Instance Name: the_patterngen/t_game_over_sprite/col_3__I_0
+         Type: EBR
+Instance Name: the_patterngen/t_asteroid3_sprite/asteroid3_sprite_x_0__I_0
+         Type: EBR
+Instance Name: the_patterngen/t_asteroid2_sprite/asteroid2_sprite_x_0__I_0
+         Type: EBR
+Instance Name: the_patterngen/t_asteroid1_sprite/asteroid1_sprite_x_0__I_0
+         Type: EBR
+Instance Name: proj1/proj3/ship1_rot_1__I_0_13_i0
+         Type: EBR
+Instance Name: proj1/proj3/ship1_rot_1__I_0_12_i0
+         Type: EBR
+Instance Name: proj1/proj3/ship1_rot_1__I_0_i0
+         Type: EBR
+Instance Name: proj1/proj3/ship1_rot_1__I_0_14_i0
+         Type: EBR
+Instance Name: proj1/proj2/ship1_rot_1__I_0_9_i0
+         Type: EBR
+Instance Name: proj1/proj2/ship1_rot_1__I_0_8_i0
+         Type: EBR
+Instance Name: proj1/proj2/ship1_rot_1__I_0_11_i0
+
+                                    Page 5
+
+
+
+
+
+ASIC Components (cont)
+----------------------
+         Type: EBR
+Instance Name: proj1/proj2/ship1_rot_1__I_0_10_i0
+         Type: EBR
+Instance Name: proj1/proj1/ship1_rot_1__I_0_5_i0
+         Type: EBR
+Instance Name: proj1/proj1/ship1_rot_1__I_0_4_i0
+         Type: EBR
+Instance Name: proj1/proj1/ship1_rot_1__I_0_7_i0
+         Type: EBR
+Instance Name: proj1/proj1/ship1_rot_1__I_0_6_i0
+         Type: EBR
+Instance Name: tnes/nes2_in_c_I_0
+         Type: IOLOGIC
+Instance Name: tnes/osc
+         Type: HFOSC
+Instance Name: tnes/nes1_in_c_I_0
+         Type: IOLOGIC
+Instance Name: proj2/proj3/ship2_rot_1__I_0_12_i0
+         Type: EBR
+Instance Name: proj2/proj2/ship2_rot_1__I_0_9_i0
+         Type: EBR
+Instance Name: proj2/proj2/ship2_rot_1__I_0_8_i0
+         Type: EBR
+Instance Name: proj2/proj2/ship2_rot_1__I_0_11_i0
+         Type: EBR
+Instance Name: proj2/proj2/ship2_rot_1__I_0_10_i0
+         Type: EBR
+Instance Name: proj2/proj1/ship2_rot_1__I_0_5_i0
+         Type: EBR
+Instance Name: proj2/proj1/ship2_rot_1__I_0_4_i0
+         Type: EBR
+Instance Name: proj2/proj1/ship2_rot_1__I_0_7_i0
+         Type: EBR
+Instance Name: proj2/proj1/ship2_rot_1__I_0_6_i0
+         Type: EBR
+Instance Name: the_pll/lscc_pll_inst/u_PLL_B
+         Type: PLL
+
+Constraint Summary
+------------------
+
+   Total number of constraints: 18
+   Total number of constraints dropped: 2
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 2 secs
+   Total REAL Time: 2 secs
+   Peak Memory Usage: 114 MB
+
+
+
+
+
+
+
+
+                                    Page 6
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor
+     Corporation,  All rights reserved.

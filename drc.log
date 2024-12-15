@@ -1,0 +1,7 @@
+DRC: Design Rule Check Radiant Software (64-bit) 2023.1.0.43.3
+Sun Dec  8 21:47:49 2024
+
+WARNING <1027013> - No port matched 'nes2_latch'.
+WARNING <1014301> - Can't resolve object 'nes2_latch' in constraint 'ldc_set_location -site {18} [get_ports nes2_latch]'.
+WARNING <1027013> - No port matched 'nes2_clk_o'.
+WARNING <1014301> - Can't resolve object 'nes2_clk_o' in constraint 'ldc_set_location -site {19} [get_ports nes2_clk_o]'.

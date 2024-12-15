@@ -1,0 +1,58 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use std.textio.all;
+
+entity playground is
+port(
+    clk : in std_logic;
+    p1_start : in std_logic;
+    p2_start : in std_logic;
+    collision_p1 : in std_logic;
+    collision_p2 : in std_logic
+);
+end playground;
+
+architecture sim of playground is
+signal xor_out : std_logic;
+signal ff1_out : std_logic;
+type State is (START, GAME, P1W, P2W, TIE);
+signal s : State;
+
+begin
+  process (clk) is
+  begin
+  if rising_edge(clk) then
+  case s is
+    when START =>   
+        if p1_start = '1' or p2_start = '1' then
+            s <= GAME;
+        end if;
+    when GAME =>
+        if collision_p1 = '1' or collision_p2 = '1' then
+            s <= GAME;
+        end if;
+    when P1W => --render p1 win until start is pressed
+        if p1_start = '1' or p2_start = '1' then
+            s <= START;
+        else
+            s <= P1W;
+        end if;
+    when P2W => --render p2 win until start is pressed
+        if p1_start = '1' or p2_start = '1' then
+            s <= START;
+        else
+            s <= P1W;
+        end if;
+    when TIE => --render tie win start is pressed
+        if p1_start = '1' or p2_start = '1' then
+            s <= START;
+        else
+            s <= P1W;
+        end if;
+    when others =>
+        s <= START;
+    end case;
+  end if;
+  end process;
+end sim;
+

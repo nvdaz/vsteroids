@@ -1,0 +1,363 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  609 of 5280 (11.534%)
+I/O cells:      14
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B        30          100.0
+                               CCU2       784          100.0
+                            FD1P3XZ       609          100.0
+                         HSOSC_CORE         1          100.0
+                                 IB         3          100.0
+                                INV        22          100.0
+                              IOL_B         2          100.0
+                               LUT4      2716          100.0
+                              MAC16         7          100.0
+                                 OB        11          100.0
+                              PLL_B         1          100.0
+SUB MODULES
+                           asteroid         1
+                       asteroid_U10         1
+                       asteroid_U11         1
+                    asteroid_sprite         1
+                 asteroid_sprite_U1         1
+                 asteroid_sprite_U2         1
+                   game_over_sprite         1
+                              mypll         1
+mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                                nes         1
+                        pattern_gen         1
+                player1_wins_sprite         1
+                player2_wins_sprite         1
+                 press_start_sprite         1
+                         projectile         1
+                      projectile_U3         1
+                      projectile_U4         1
+                      projectile_U5         1
+                      projectile_U6         1
+                      projectile_U7         1
+              projectile_controller         1
+           projectile_controller_U9         1
+                               ship         1
+                            ship_U8         1
+                     ship_sprite_32         1
+                  ship_sprite_32_U0         1
+                      state_machine         1
+                         tie_sprite         1
+                                vga         1
+                   vsteroids_sprite         1
+                              TOTAL      4216
+----------------------------------------------------------------------
+Report for cell pattern_gen.v1
+Instance Path : the_patterngen
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         9           30.0
+                                FA2       301           38.4
+                            FD1P3XZ        39            6.4
+                               LUT4      1740           64.1
+                              MAC16         7          100.0
+SUB MODULES
+                    asteroid_sprite         1
+                 asteroid_sprite_U1         1
+                 asteroid_sprite_U2         1
+                   game_over_sprite         1
+                player1_wins_sprite         1
+                player2_wins_sprite         1
+                 press_start_sprite         1
+                     ship_sprite_32         1
+                  ship_sprite_32_U0         1
+                         tie_sprite         1
+                   vsteroids_sprite         1
+                              TOTAL      2107
+----------------------------------------------------------------------
+Report for cell vsteroids_sprite.v1
+Instance Path : the_patterngen.t_vsteroids_sprite
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1            3.3
+                                FA2         5            0.6
+                            FD1P3XZ         5            0.8
+                               LUT4         1            0.0
+                              MAC16         1           14.3
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell tie_sprite.v1
+Instance Path : the_patterngen.t_tie_sprite
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1            3.3
+                                FA2         4            0.5
+                            FD1P3XZ         2            0.3
+                               LUT4         1            0.0
+                              MAC16         1           14.3
+                              TOTAL         9
+----------------------------------------------------------------------
+Report for cell ship_sprite_32.v1
+Instance Path : the_patterngen.t_shipsprite2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         4            0.5
+                               LUT4       490           18.0
+                              MAC16         1           14.3
+                              TOTAL       495
+----------------------------------------------------------------------
+Report for cell ship_sprite_32_U0.v1
+Instance Path : the_patterngen.t_shipsprite1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         4            0.5
+                               LUT4       506           18.6
+                              MAC16         1           14.3
+                              TOTAL       511
+----------------------------------------------------------------------
+Report for cell press_start_sprite.v1
+Instance Path : the_patterngen.t_press_start_sprite_output
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1            3.3
+                                FA2         5            0.6
+                            FD1P3XZ         2            0.3
+                               LUT4         2            0.1
+                              MAC16         1           14.3
+                              TOTAL        11
+----------------------------------------------------------------------
+Report for cell player2_wins_sprite.v1
+Instance Path : the_patterngen.t_player2_wins_sprite
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1            3.3
+                            FD1P3XZ         5            0.8
+                               LUT4         3            0.1
+                              TOTAL         9
+----------------------------------------------------------------------
+Report for cell player1_wins_sprite.v1
+Instance Path : the_patterngen.t_player1_wins_sprite
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1            3.3
+                                FA2         5            0.6
+                            FD1P3XZ         5            0.8
+                               LUT4         3            0.1
+                              MAC16         1           14.3
+                              TOTAL        15
+----------------------------------------------------------------------
+Report for cell game_over_sprite.v1
+Instance Path : the_patterngen.t_game_over_sprite
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1            3.3
+                                FA2         4            0.5
+                            FD1P3XZ         2            0.3
+                               LUT4         1            0.0
+                              MAC16         1           14.3
+                              TOTAL         9
+----------------------------------------------------------------------
+Report for cell asteroid_sprite.v1
+Instance Path : the_patterngen.t_asteroid3_sprite
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1            3.3
+                            FD1P3XZ         2            0.3
+                               LUT4         1            0.0
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell asteroid_sprite_U1.v1
+Instance Path : the_patterngen.t_asteroid2_sprite
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1            3.3
+                            FD1P3XZ         2            0.3
+                               LUT4         1            0.0
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell asteroid_sprite_U2.v1
+Instance Path : the_patterngen.t_asteroid1_sprite
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1            3.3
+                            FD1P3XZ         2            0.3
+                               LUT4         1            0.0
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell asteroid_U11.v1
+Instance Path : asteroid1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        12            1.5
+                            FD1P3XZ        20            3.3
+                              TOTAL        32
+----------------------------------------------------------------------
+Report for cell ship.v1
+Instance Path : ship2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        86           11.0
+                            FD1P3XZ        66           10.8
+                               LUT4       214            7.9
+                              TOTAL       366
+----------------------------------------------------------------------
+Report for cell asteroid_U10.v1
+Instance Path : asteroid2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        12            1.5
+                            FD1P3XZ        20            3.3
+                              TOTAL        32
+----------------------------------------------------------------------
+Report for cell vga.v1
+Instance Path : the_vga
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        12            1.5
+                            FD1P3XZ        20            3.3
+                               LUT4        18            0.7
+                              TOTAL        50
+----------------------------------------------------------------------
+Report for cell state_machine.v1
+Instance Path : the_state_machine
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         5            0.8
+                               LUT4        17            0.6
+                              TOTAL        22
+----------------------------------------------------------------------
+Report for cell projectile_controller_U9.v1
+Instance Path : proj1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B        12           40.0
+                                FA2       129           16.5
+                            FD1P3XZ       154           25.3
+                                INV        12           54.5
+                               LUT4       224            8.2
+SUB MODULES
+                      projectile_U5         1
+                      projectile_U6         1
+                      projectile_U7         1
+                              TOTAL       534
+----------------------------------------------------------------------
+Report for cell projectile_U5.v1
+Instance Path : proj1.proj3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         4           13.3
+                                FA2        43            5.5
+                            FD1P3XZ        50            8.2
+                                INV         4           18.2
+                               LUT4        74            2.7
+                              TOTAL       175
+----------------------------------------------------------------------
+Report for cell projectile_U6.v1
+Instance Path : proj1.proj2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         4           13.3
+                                FA2        43            5.5
+                            FD1P3XZ        50            8.2
+                                INV         4           18.2
+                               LUT4        74            2.7
+                              TOTAL       175
+----------------------------------------------------------------------
+Report for cell projectile_U7.v1
+Instance Path : proj1.proj1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         4           13.3
+                                FA2        43            5.5
+                            FD1P3XZ        50            8.2
+                                INV         4           18.2
+                               LUT4        74            2.7
+                              TOTAL       175
+----------------------------------------------------------------------
+Report for cell asteroid.v1
+Instance Path : asteroid3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        12            1.5
+                            FD1P3XZ        20            3.3
+                              TOTAL        32
+----------------------------------------------------------------------
+Report for cell nes.v1
+Instance Path : tnes
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         9            1.1
+                            FD1P3XZ        41            6.7
+                         HSOSC_CORE         1          100.0
+                              IOL_B         2          100.0
+                               LUT4        24            0.9
+                              TOTAL        77
+----------------------------------------------------------------------
+Report for cell projectile_controller.v1
+Instance Path : proj2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         9           30.0
+                                FA2       125           15.9
+                            FD1P3XZ       155           25.5
+                                INV         9           40.9
+                               LUT4       253            9.3
+SUB MODULES
+                         projectile         1
+                      projectile_U3         1
+                      projectile_U4         1
+                              TOTAL       554
+----------------------------------------------------------------------
+Report for cell projectile.v1
+Instance Path : proj2.proj3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1            3.3
+                                FA2        39            5.0
+                            FD1P3XZ        51            8.4
+                                INV         1            4.5
+                               LUT4       103            3.8
+                              TOTAL       195
+----------------------------------------------------------------------
+Report for cell projectile_U3.v1
+Instance Path : proj2.proj2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         4           13.3
+                                FA2        43            5.5
+                            FD1P3XZ        50            8.2
+                                INV         4           18.2
+                               LUT4        74            2.7
+                              TOTAL       175
+----------------------------------------------------------------------
+Report for cell projectile_U4.v1
+Instance Path : proj2.proj1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         4           13.3
+                                FA2        43            5.5
+                            FD1P3XZ        50            8.2
+                                INV         4           18.2
+                               LUT4        74            2.7
+                              TOTAL       175
+----------------------------------------------------------------------
+Report for cell ship_U8.v1
+Instance Path : ship1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        86           11.0
+                            FD1P3XZ        67           11.0
+                               LUT4       192            7.1
+                              TOTAL       345
+----------------------------------------------------------------------
+Report for cell mypll.v1
+Instance Path : the_pll
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+SUB MODULES
+mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000").v1
+Instance Path : the_pll.lscc_pll_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+                              TOTAL         1

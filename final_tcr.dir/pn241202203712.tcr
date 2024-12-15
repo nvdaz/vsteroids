@@ -1,0 +1,10 @@
+#Start recording tcl command: 12/2/2024 20:32:24
+#Project Location: C:/Users/kwigdo01/my_designs/final; Project name: final
+prj_create -name "final" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_save 
+prj_set_strategy_value -strategy Strategy1 lse_vhdl2008=True
+prj_set_strategy_value -strategy Strategy1 syn_vhdl2008=True
+prj_add_source "C:/Users/kwigdo01/my_designs/final/source/impl_1/top.vhd"
+prj_run Map -impl impl_1
+prj_run Synthesis -impl impl_1
+#Stop recording: 12/2/2024 20:37:12

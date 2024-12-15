@@ -1,0 +1,5 @@
+#Start recording tcl command: 12/2/2024 20:37:50
+#Project Location: Z:/my_designs/final; Project name: final
+prj_open "Z:/my_designs/final/final.rdf"
+prj_run Synthesis -impl impl_1
+#Stop recording: 12/2/2024 20:39:58

@@ -1,0 +1,334 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       2.00        100.0
+                                  LUT4	       4320        100.0
+                               LUTGATE	       2752        100.0
+                                LUTCCU	       1568        100.0
+                                 IOREG	          2        100.0
+                                 IOBUF	         14        100.0
+                                PFUREG	        609        100.0
+                                   EBR	         30        100.0
+                                   DSP	          7        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                              asteroid	          1         0.6
+                          asteroid_U10	          1         0.6
+                          asteroid_U11	          1         0.6
+                                 mypll	          1         0.0
+                                   nes	          1         1.0
+                           pattern_gen	          1        53.2
+                 projectile_controller	          1        10.5
+              projectile_controller_U9	          1        10.0
+                                  ship	          1         8.6
+                               ship_U8	          1         8.1
+                         state_machine	          1         0.4
+                                   vga	          1         1.0
+---------------------------------------------------
+Report for cell pattern_gen
+   Instance path: top/the_patterngen
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       2297        53.2
+                               LUTGATE	       1695        61.6
+                                LUTCCU	        602        38.4
+                                PFUREG	         39         6.4
+                                   EBR	          9        30.0
+                                   DSP	          7        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                       asteroid_sprite	          1         0.0
+                    asteroid_sprite_U1	          1         0.0
+                    asteroid_sprite_U2	          1         0.0
+                      game_over_sprite	          1         0.2
+                   player1_wins_sprite	          1         0.3
+                   player2_wins_sprite	          1         0.1
+                    press_start_sprite	          1         0.3
+                        ship_sprite_32	          1        11.3
+                     ship_sprite_32_U0	          1        11.7
+                            tie_sprite	          1         0.2
+                      vsteroids_sprite	          1         0.3
+---------------------------------------------------
+Report for cell vsteroids_sprite
+   Instance path: top/the_patterngen/t_vsteroids_sprite
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         11         0.3
+                               LUTGATE	          1         0.0
+                                LUTCCU	         10         0.6
+                                PFUREG	          5         0.8
+                                   EBR	          1         3.3
+                                   DSP	          1        14.3
+---------------------------------------------------
+Report for cell tie_sprite
+   Instance path: top/the_patterngen/t_tie_sprite
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          9         0.2
+                               LUTGATE	          1         0.0
+                                LUTCCU	          8         0.5
+                                PFUREG	          2         0.3
+                                   EBR	          1         3.3
+                                   DSP	          1        14.3
+---------------------------------------------------
+Report for cell ship_sprite_32
+   Instance path: top/the_patterngen/t_shipsprite2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        487        11.3
+                               LUTGATE	        479        17.4
+                                LUTCCU	          8         0.5
+                                   DSP	          1        14.3
+---------------------------------------------------
+Report for cell ship_sprite_32_U0
+   Instance path: top/the_patterngen/t_shipsprite1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        504        11.7
+                               LUTGATE	        496        18.0
+                                LUTCCU	          8         0.5
+                                   DSP	          1        14.3
+---------------------------------------------------
+Report for cell press_start_sprite
+   Instance path: top/the_patterngen/t_press_start_sprite_output
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         12         0.3
+                               LUTGATE	          2         0.1
+                                LUTCCU	         10         0.6
+                                PFUREG	          2         0.3
+                                   EBR	          1         3.3
+                                   DSP	          1        14.3
+---------------------------------------------------
+Report for cell player2_wins_sprite
+   Instance path: top/the_patterngen/t_player2_wins_sprite
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          3         0.1
+                               LUTGATE	          3         0.1
+                                PFUREG	          5         0.8
+                                   EBR	          1         3.3
+---------------------------------------------------
+Report for cell player1_wins_sprite
+   Instance path: top/the_patterngen/t_player1_wins_sprite
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         13         0.3
+                               LUTGATE	          3         0.1
+                                LUTCCU	         10         0.6
+                                PFUREG	          5         0.8
+                                   EBR	          1         3.3
+                                   DSP	          1        14.3
+---------------------------------------------------
+Report for cell game_over_sprite
+   Instance path: top/the_patterngen/t_game_over_sprite
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          9         0.2
+                               LUTGATE	          1         0.0
+                                LUTCCU	          8         0.5
+                                PFUREG	          2         0.3
+                                   EBR	          1         3.3
+                                   DSP	          1        14.3
+---------------------------------------------------
+Report for cell asteroid_sprite
+   Instance path: top/the_patterngen/t_asteroid3_sprite
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                PFUREG	          2         0.3
+                                   EBR	          1         3.3
+---------------------------------------------------
+Report for cell asteroid_sprite_U1
+   Instance path: top/the_patterngen/t_asteroid2_sprite
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                PFUREG	          2         0.3
+                                   EBR	          1         3.3
+---------------------------------------------------
+Report for cell asteroid_sprite_U2
+   Instance path: top/the_patterngen/t_asteroid1_sprite
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                PFUREG	          2         0.3
+                                   EBR	          1         3.3
+---------------------------------------------------
+Report for cell asteroid_U11
+   Instance path: top/asteroid1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         24         0.6
+                                LUTCCU	         24         1.5
+                                PFUREG	         20         3.3
+---------------------------------------------------
+Report for cell ship
+   Instance path: top/ship2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        372         8.6
+                               LUTGATE	        200         7.3
+                                LUTCCU	        172        11.0
+                                PFUREG	         66        10.8
+---------------------------------------------------
+Report for cell asteroid_U10
+   Instance path: top/asteroid2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         24         0.6
+                                LUTCCU	         24         1.5
+                                PFUREG	         20         3.3
+---------------------------------------------------
+Report for cell vga
+   Instance path: top/the_vga
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         42         1.0
+                               LUTGATE	         18         0.7
+                                LUTCCU	         24         1.5
+                                PFUREG	         20         3.3
+---------------------------------------------------
+Report for cell state_machine
+   Instance path: top/the_state_machine
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         17         0.4
+                               LUTGATE	         17         0.6
+                                PFUREG	          5         0.8
+---------------------------------------------------
+Report for cell projectile_controller_U9
+   Instance path: top/proj1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        434        10.0
+                               LUTGATE	        176         6.4
+                                LUTCCU	        258        16.5
+                                PFUREG	        154        25.3
+                                   EBR	         12        40.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         projectile_U5	          1         3.3
+                         projectile_U6	          1         3.3
+                         projectile_U7	          1         3.3
+---------------------------------------------------
+Report for cell projectile_U5
+   Instance path: top/proj1/proj3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        144         3.3
+                               LUTGATE	         58         2.1
+                                LUTCCU	         86         5.5
+                                PFUREG	         50         8.2
+                                   EBR	          4        13.3
+---------------------------------------------------
+Report for cell projectile_U6
+   Instance path: top/proj1/proj2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        144         3.3
+                               LUTGATE	         58         2.1
+                                LUTCCU	         86         5.5
+                                PFUREG	         50         8.2
+                                   EBR	          4        13.3
+---------------------------------------------------
+Report for cell projectile_U7
+   Instance path: top/proj1/proj1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        144         3.3
+                               LUTGATE	         58         2.1
+                                LUTCCU	         86         5.5
+                                PFUREG	         50         8.2
+                                   EBR	          4        13.3
+---------------------------------------------------
+Report for cell asteroid
+   Instance path: top/asteroid3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         24         0.6
+                                LUTCCU	         24         1.5
+                                PFUREG	         20         3.3
+---------------------------------------------------
+Report for cell nes
+   Instance path: top/tnes
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       2.00        100.0
+                                  LUT4	         42         1.0
+                               LUTGATE	         24         0.9
+                                LUTCCU	         18         1.1
+                                 IOREG	          2        100.0
+                                PFUREG	         41         6.7
+---------------------------------------------------
+Report for cell projectile_controller
+   Instance path: top/proj2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        455        10.5
+                               LUTGATE	        205         7.4
+                                LUTCCU	        250        15.9
+                                PFUREG	        155        25.5
+                                   EBR	          9        30.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                            projectile	          1         3.8
+                         projectile_U3	          1         3.3
+                         projectile_U4	          1         3.3
+---------------------------------------------------
+Report for cell projectile
+   Instance path: top/proj2/proj3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        165         3.8
+                               LUTGATE	         87         3.2
+                                LUTCCU	         78         5.0
+                                PFUREG	         51         8.4
+                                   EBR	          1         3.3
+---------------------------------------------------
+Report for cell projectile_U3
+   Instance path: top/proj2/proj2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        144         3.3
+                               LUTGATE	         58         2.1
+                                LUTCCU	         86         5.5
+                                PFUREG	         50         8.2
+                                   EBR	          4        13.3
+---------------------------------------------------
+Report for cell projectile_U4
+   Instance path: top/proj2/proj1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        144         3.3
+                               LUTGATE	         58         2.1
+                                LUTCCU	         86         5.5
+                                PFUREG	         50         8.2
+                                   EBR	          4        13.3
+---------------------------------------------------
+Report for cell ship_U8
+   Instance path: top/ship1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        352         8.1
+                               LUTGATE	        180         6.5
+                                LUTCCU	        172        11.0
+                                PFUREG	         67        11.0
+---------------------------------------------------
+Report for cell mypll
+   Instance path: top/the_pll
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")	          1         0.0
+---------------------------------------------------
+Report for cell mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")
+   Instance path: top/the_pll/lscc_pll_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)

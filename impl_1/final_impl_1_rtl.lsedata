@@ -1,0 +1,24 @@
+<top name = "top"  library = "work"  arch = "RTL"  entry = "VHDL">
+
+<clocks>
+    <clockitem name = "nes_clk_o"  type = "net" />
+    <clockitem name = "ext_osc"  type = "port" />
+    <clockitem name = "clk"  type = "net" />
+    <clockitem name = "vsync"  type = "net" />
+    <clockitem name = "tnes/clk"  type = "net" />
+    <clockitem name = "the_pll/lscc_pll_inst/outglobalb_o"  type = "net" />
+    <clockitem name = "the_pll/lscc_pll_inst/outcoreb_o"  type = "net" />
+    <clockitem name = "the_pll/outcore_o"  type = "net" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 8
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+</top>

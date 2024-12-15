@@ -1,0 +1,9 @@
+#Start recording tcl command: 12/9/2024 01:30:31
+#Project Location: Z:/my_designs/final; Project name: final
+prj_open "Z:/my_designs/final/final.rdf"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+#Stop recording: 12/9/2024 01:42:58

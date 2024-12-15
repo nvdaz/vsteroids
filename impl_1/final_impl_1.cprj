@@ -1,0 +1,8 @@
+-ver "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.vhd"
+-lib "work" -vhd "Z:/my_designs/final/source/impl_1/top.vhd" "Z:/my_designs/final/source/impl_1/ship.vhd" "Z:/my_designs/final/source/impl_1/nes.vhd" "Z:/my_designs/final/source/impl_1/pattern_gen.vhd" "Z:/my_designs/final/source/impl_1/vga.vhd" "Z:/my_designs/final/source/impl_1/ship_sprite.vhd" "Z:/my_designs/final/source/impl_1/projectile.vhd" "Z:/my_designs/final/source/impl_1/state.vhd" "Z:/my_designs/final/source/impl_1/projectile_controller.vhd" "Z:/my_designs/final/source/impl_1/start.vhd" "Z:/my_designs/final/source/impl_1/game_over_sprite.vhd" "Z:/my_designs/final/source/impl_1/player1_wins_sprite.vhd" "Z:/my_designs/final/source/impl_1/player2_wins_sprite.vhd" "Z:/my_designs/final/source/impl_1/press_start_sprite.vhd" "Z:/my_designs/final/source/impl_1/shipsprite.vhd" "Z:/my_designs/final/source/impl_1/tie.vhd" "Z:/my_designs/final/source/impl_1/vsteroids_sprite.vhd" "Z:/my_designs/final/source/impl_1/asteroid.vhd" "Z:/my_designs/final/source/impl_1/asteroid_sprite.vhd" "Z:/my_designs/final/source/impl_1/ship_sprite_32.vhd"
+-path "Z:/my_designs/final"
+-vh2008
+-top top
+-isTop
+-a "iCE40UP"

@@ -1,0 +1,448 @@
+synthesis:  version Radiant Software (64-bit) 2023.1.0.43.3
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Dec  9 01:38:41 2024
+
+
+Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f final_impl_1_lattice.synproj -gui -msgset Z:/my_designs/final/promote.xml 
+
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : iCE40UP
+
+
+### Device             : iCE40UP5K
+
+
+### Package            : SG48
+
+
+### Performance Grade  : High-Performance_1.2V
+
+
+                                                         
+
+
+INFO <35001786> - synthesis: User-Selected Strategy Settings
+Optimization goal = Area
+Top-level module name = top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3 (default)
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output HDL file name = final_impl_1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-sdc option: SDC file input is final_impl_1_cpe.ldc.
+-vh2008
+
+-path C:/lscc/radiant/2023.1/ispfpga/ice40tp/data (searchpath added)
+-path Z:/my_designs/final (searchpath added)
+-path Z:/my_designs/final/impl_1 (searchpath added)
+-path Z:/my_designs/final/mypll (searchpath added)
+Mixed language design
+Verilog design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v
+Verilog design file = Z:/my_designs/final/mypll/rtl/mypll.v
+VHDL library = pmi
+VHDL design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/top.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/ship.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/nes.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/pattern_gen.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/vga.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/ship_sprite.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/projectile.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/state.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/projectile_controller.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/start.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/game_over_sprite.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/player1_wins_sprite.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/player2_wins_sprite.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/press_start_sprite.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/shipsprite.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/tie.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/vsteroids_sprite.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/asteroid.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/asteroid_sprite.vhd
+VHDL library = work
+VHDL design file = Z:/my_designs/final/source/impl_1/ship_sprite_32.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM8 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM7 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM6 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM5 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM4 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM3 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM2 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM1 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM0 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port I is not connected on this instance. VDB-5050
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_add.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_counter.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_mac.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file z:/my_designs/final/mypll/rtl/mypll.v. VERI-1482
+Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd
+
+INFO <35921014> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+Analyzing VHDL file z:/my_designs/final/source/impl_1/top.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/top.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/top.vhd(5): analyzing entity top. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/top.vhd(22): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/ship.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/ship.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/ship.vhd(5): analyzing entity ship. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/ship.vhd(24): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/nes.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/nes.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/nes.vhd(6): analyzing entity nes. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/nes.vhd(25): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/pattern_gen.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/pattern_gen.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/pattern_gen.vhd(5): analyzing entity pattern_gen. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/pattern_gen.vhd(40): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/vga.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/vga.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/vga.vhd(16): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/ship_sprite.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/ship_sprite.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/ship_sprite.vhd(6): analyzing entity ship_sprite. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/ship_sprite.vhd(15): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/projectile.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/projectile.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/projectile.vhd(6): analyzing entity projectile. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/projectile.vhd(22): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/state.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/state.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/state.vhd(5): analyzing entity state_machine. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/state.vhd(17): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/projectile_controller.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/projectile_controller.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/projectile_controller.vhd(6): analyzing entity projectile_controller. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/projectile_controller.vhd(28): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/start.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/start.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/start.vhd(6): analyzing entity start_sprite. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/start.vhd(15): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/game_over_sprite.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/game_over_sprite.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/game_over_sprite.vhd(6): analyzing entity game_over_sprite. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/game_over_sprite.vhd(16): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/player1_wins_sprite.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/player1_wins_sprite.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/player1_wins_sprite.vhd(6): analyzing entity player1_wins_sprite. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/player1_wins_sprite.vhd(16): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/player2_wins_sprite.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/player2_wins_sprite.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/player2_wins_sprite.vhd(6): analyzing entity player2_wins_sprite. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/player2_wins_sprite.vhd(16): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/press_start_sprite.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/press_start_sprite.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/press_start_sprite.vhd(6): analyzing entity press_start_sprite. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/press_start_sprite.vhd(16): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/shipsprite.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/shipsprite.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/shipsprite.vhd(6): analyzing entity ship_spritee. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/shipsprite.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/tie.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/tie.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/tie.vhd(6): analyzing entity tie_sprite. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/tie.vhd(16): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/vsteroids_sprite.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/vsteroids_sprite.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/vsteroids_sprite.vhd(6): analyzing entity vsteroids_sprite. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/vsteroids_sprite.vhd(16): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/asteroid.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/asteroid.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/asteroid.vhd(5): analyzing entity asteroid. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/asteroid.vhd(21): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/asteroid_sprite.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/asteroid_sprite.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/asteroid_sprite.vhd(6): analyzing entity asteroid_sprite. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/asteroid_sprite.vhd(16): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/my_designs/final/source/impl_1/ship_sprite_32.vhd. VHDL-1481
+Analyzing VHDL file z:/my_designs/final/source/impl_1/ship_sprite_32.vhd
+
+INFO <35921012> - synthesis: z:/my_designs/final/source/impl_1/ship_sprite_32.vhd(6): analyzing entity ship_sprite_32. VHDL-1012
+INFO <35921010> - synthesis: z:/my_designs/final/source/impl_1/ship_sprite_32.vhd(16): analyzing architecture synth. VHDL-1010
+INFO <35921504> - synthesis: The default VHDL library search path is now "Z:/my_designs/final/impl_1". VHDL-1504
+Top module language type = VHDL.
+WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
+WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
+Top module name (VHDL, mixed language): top
+                                                         
+
+
+### Number of Logic Cells: 5280
+
+
+### Number of RAM Blocks: 30
+
+
+### Number of DSP Blocks: 8
+
+
+### Number of PLLs: 1
+
+
+### Number of IO Pins: 56
+
+
+##########################################################
+
+
+                                                         
+
+
+WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
+WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
+WARNING <35931002> - synthesis: z:/my_designs/final/mypll/rtl/mypll.v(139): net \the_pll/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: z:/my_designs/final/mypll/rtl/mypll.v(140): net \the_pll/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
+######## Missing driver on net \the_pll/lscc_pll_inst/sclk_i. Patching with GND.
+######## Missing driver on net \the_pll/lscc_pll_inst/sdi_i. Patching with GND.
+CRITICAL <35001747> - synthesis: Bit 9 of Register \asteroid1/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 8 of Register \asteroid1/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 7 of Register \asteroid1/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 6 of Register \asteroid1/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 5 of Register \asteroid1/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 4 of Register \asteroid1/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 3 of Register \asteroid1/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 2 of Register \asteroid1/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 1 of Register \asteroid1/x_velo_signal is stuck at Zero
+CRITICAL <35001748> - synthesis: Bit 0 of Register \asteroid1/x_velo_signal is stuck at One
+CRITICAL <35001747> - synthesis: Bit 9 of Register \asteroid1/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 8 of Register \asteroid1/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 7 of Register \asteroid1/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 6 of Register \asteroid1/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 5 of Register \asteroid1/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 4 of Register \asteroid1/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 3 of Register \asteroid1/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 2 of Register \asteroid1/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 1 of Register \asteroid1/y_velo_signal is stuck at Zero
+CRITICAL <35001748> - synthesis: Bit 0 of Register \asteroid1/y_velo_signal is stuck at One
+CRITICAL <35001747> - synthesis: Bit 9 of Register \asteroid2/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 8 of Register \asteroid2/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 7 of Register \asteroid2/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 6 of Register \asteroid2/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 5 of Register \asteroid2/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 4 of Register \asteroid2/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 3 of Register \asteroid2/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 2 of Register \asteroid2/x_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 1 of Register \asteroid2/x_velo_signal is stuck at Zero
+CRITICAL <35001748> - synthesis: Bit 0 of Register \asteroid2/x_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 9 of Register \asteroid2/y_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 8 of Register \asteroid2/y_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 7 of Register \asteroid2/y_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 6 of Register \asteroid2/y_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 5 of Register \asteroid2/y_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 4 of Register \asteroid2/y_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 3 of Register \asteroid2/y_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 2 of Register \asteroid2/y_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 1 of Register \asteroid2/y_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 0 of Register \asteroid2/y_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 9 of Register \asteroid3/x_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 8 of Register \asteroid3/x_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 7 of Register \asteroid3/x_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 6 of Register \asteroid3/x_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 5 of Register \asteroid3/x_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 4 of Register \asteroid3/x_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 3 of Register \asteroid3/x_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 2 of Register \asteroid3/x_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 1 of Register \asteroid3/x_velo_signal is stuck at One
+CRITICAL <35001748> - synthesis: Bit 0 of Register \asteroid3/x_velo_signal is stuck at One
+CRITICAL <35001747> - synthesis: Bit 9 of Register \asteroid3/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 8 of Register \asteroid3/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 7 of Register \asteroid3/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 6 of Register \asteroid3/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 5 of Register \asteroid3/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 4 of Register \asteroid3/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 3 of Register \asteroid3/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 2 of Register \asteroid3/y_velo_signal is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 1 of Register \asteroid3/y_velo_signal is stuck at Zero
+CRITICAL <35001748> - synthesis: Bit 0 of Register \asteroid3/y_velo_signal is stuck at One
+
+
+
+WARNING <35001045> - synthesis: No available RAMs found.
+WARNING <35001045> - synthesis: No available RAMs found.
+WARNING <35001045> - synthesis: No available RAMs found.
+Mapped 7 multiplier(s)
+
+
+Duplicate register/latch removal. \the_patterngen/t_asteroid1_sprite/rgb_i1 is a one-to-one match with \the_patterngen/t_asteroid1_sprite/rgb_i2.
+Duplicate register/latch removal. \the_patterngen/t_asteroid2_sprite/rgb_i1 is a one-to-one match with \the_patterngen/t_asteroid2_sprite/rgb_i2.
+Duplicate register/latch removal. \the_patterngen/t_asteroid3_sprite/rgb_i1 is a one-to-one match with \the_patterngen/t_asteroid3_sprite/rgb_i2.
+Duplicate register/latch removal. \the_patterngen/t_vsteroids_sprite/rgb_i0 is a one-to-one match with \the_patterngen/t_vsteroids_sprite/rgb_i2.
+Duplicate register/latch removal. \the_patterngen/t_game_over_sprite/rgb_i0 is a one-to-one match with \the_patterngen/t_game_over_sprite/rgb_i2.
+Duplicate register/latch removal. \the_patterngen/t_game_over_sprite/rgb_i5 is a one-to-one match with \the_patterngen/t_game_over_sprite/rgb_i1.
+Duplicate register/latch removal. \the_patterngen/t_game_over_sprite/rgb_i4 is a one-to-one match with \the_patterngen/t_game_over_sprite/rgb_i0.
+Duplicate register/latch removal. \the_patterngen/t_game_over_sprite/rgb_i3 is a one-to-one match with \the_patterngen/t_game_over_sprite/rgb_i5.
+Duplicate register/latch removal. \the_patterngen/t_press_start_sprite_output/rgb_i5 is a one-to-one match with \the_patterngen/t_press_start_sprite_output/rgb_i1.
+Duplicate register/latch removal. \the_patterngen/t_press_start_sprite_output/rgb_i3 is a one-to-one match with \the_patterngen/t_press_start_sprite_output/rgb_i5.
+Duplicate register/latch removal. \the_patterngen/t_asteroid3_sprite/rgb_i4 is a one-to-one match with \the_patterngen/t_asteroid3_sprite/rgb_i1.
+Duplicate register/latch removal. \the_patterngen/t_asteroid2_sprite/rgb_i4 is a one-to-one match with \the_patterngen/t_asteroid2_sprite/rgb_i1.
+Duplicate register/latch removal. \the_patterngen/t_asteroid1_sprite/rgb_i4 is a one-to-one match with \the_patterngen/t_asteroid1_sprite/rgb_i1.
+Duplicate register/latch removal. \the_patterngen/t_press_start_sprite_output/rgb_i0 is a one-to-one match with \the_patterngen/t_press_start_sprite_output/rgb_i2.
+Duplicate register/latch removal. \the_patterngen/t_player1_wins_sprite/rgb_i0 is a one-to-one match with \the_patterngen/t_player1_wins_sprite/rgb_i2.
+Duplicate register/latch removal. \the_patterngen/t_player2_wins_sprite/rgb_i0 is a one-to-one match with \the_patterngen/t_player2_wins_sprite/rgb_i2.
+Duplicate register/latch removal. \the_patterngen/t_press_start_sprite_output/rgb_i4 is a one-to-one match with \the_patterngen/t_press_start_sprite_output/rgb_i0.
+Duplicate register/latch removal. \the_patterngen/t_tie_sprite/rgb_i5 is a one-to-one match with \the_patterngen/t_tie_sprite/rgb_i1.
+Duplicate register/latch removal. \the_patterngen/t_tie_sprite/rgb_i3 is a one-to-one match with \the_patterngen/t_tie_sprite/rgb_i5.
+Duplicate register/latch removal. \the_patterngen/t_tie_sprite/rgb_i0 is a one-to-one match with \the_patterngen/t_tie_sprite/rgb_i2.
+Duplicate register/latch removal. \the_patterngen/t_tie_sprite/rgb_i4 is a one-to-one match with \the_patterngen/t_tie_sprite/rgb_i0.
+Duplicate register/latch removal. \ship1/y_position_i13 is a one-to-one match with \ship2/y_position_i13.
+INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
+
+################### Begin Area Report (top)######################
+Number of register bits => 609 of 5280 (11 % )
+EBR_B => 30
+CCU2 => 784
+FD1P3XZ => 609
+HSOSC_CORE => 1
+IB => 3
+INV => 22
+IOL_B => 2
+LUT4 => 2716
+MAC16 => 7
+OB => 11
+PLL_B => 1
+################### End Area Report ##################
+Number of odd-length carry chains : 16
+Number of even-length carry chains : 111
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 4
+  Net : vsync_c, loads : 1
+  Net : tnes/nes_clk_o_c, loads : 1
+  Net : ext_osc_c, loads : 1
+  Net : the_pll/lscc_pll_inst/clk, loads : 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : ship1/ship1_rot[3], loads : 215
+  Net : ship2/ship2_rot[3], loads : 214
+  Net : ship1/ship1_rot[2], loads : 201
+  Net : ship2/ship2_rot[2], loads : 200
+  Net : ship2/ship2_rot[4], loads : 199
+  Net : ship1/ship1_rot[4], loads : 198
+  Net : ship2/ship2_rot[5], loads : 190
+  Net : ship1/ship1_rot[5], loads : 186
+  Net : ship2/ship2_rot[1], loads : 184
+  Net : ship1/ship1_rot[1], loads : 181
+################### End Clock Report ##################
+
+Peak Memory Usage: 304 MB
+
+--------------------------------------------------------------
+Total CPU Time: 15 secs 
+Total REAL Time: 34 secs 
+--------------------------------------------------------------
